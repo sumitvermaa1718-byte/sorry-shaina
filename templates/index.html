@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Shaina ❤️</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+           min-height: 100vh;
+        font-family: Georgia, serif;
+        background: linear-gradient(135deg, #fff0f5, #ffe1eb);
+        color: #702d43;
+        overflow-x: hidden;
+
+        }
+
+        .container {
+            min-height: 100vh;
+        text-align: center;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: appear 1.5s ease;
+        }
+
+        .heart {
+            font-size: 70px;
+            animation: heartbeat 1.5s infinite;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 10vw, 75px);
+            margin-bottom: 15px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            line-height: 1.7;
+            max-width: 550px;
+            margin: auto;
+        }
+
+        .button {
+            margin-top: 35px;
+            padding: 15px 32px;
+            border: none;
+            border-radius: 50px;
+            background: #d94f72;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            box-shadow: 0 10px 25px rgba(217, 79, 114, 0.3);
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            transform: scale(1.08);
+            background: #c83e62;
+        }
+
+        .floating-heart {
+            position: absolute;
+            bottom: -30px;
+            font-size: 25px;
+            animation: float 7s linear infinite;
+            opacity: 0.6;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.15);
+            }
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(0);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0.6;
+            }
+
+            to {
+                transform: translateY(-110vh);
+                opacity: 0;
+            }
+        }
+        .memories {
+    min-height: 100vh;
+    padding: 80px 25px;
+    background: linear-gradient(135deg, #fff5f8, #ffe4ec);
+    text-align: center;
+}
+
+.memories h2 {
+    font-size: 45px;
+    color: #c83e62;
+    margin-bottom: 15px;
+}
+
+.memory-text {
+    font-size: 19px;
+    color: #6d3a49;
+    margin-bottom: 40px;
+}
+
+.photo-grid {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.photo-card {
+    background: white;
+    padding: 10px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(120, 40, 70, 0.15);
+    transition: 0.3s;
+}
+
+.photo-card:hover {
+    transform: translateY(-8px) rotate(1deg);
+}
+
+.photo-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
+
+.memory-end {
+    margin-top: 45px;
+    font-size: 24px;
+    color: #c83e62;
+    font-weight: bold;
+}
+/* YAHAN FINAL SLIDE CSS PASTE KARO */
+
+.final-slide {
+    min-height: 100vh;
+    padding: 80px 25px;
+    background: linear-gradient(135deg, #ffe4ec, #fff5f8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.final-heart {
+    font-size: 70px;
+    animation: heartbeat 1.5s infinite;
+    margin-bottom: 25px;
+}
+
+.final-slide h2 {
+    font-size: clamp(32px, 6vw, 55px);
+    color: #c83e62;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.final-slide > p {
+    font-size: 25px;
+    color: #702d43;
+    font-weight: bold;
+}
+
+.final-message {
+    max-width: 650px;
+    font-size: 18px !important;
+    line-height: 1.8;
+    font-weight: normal !important;
+    margin-top: 30px;
+}
+
+.forgive {
+    margin-top: 40px;
+    padding: 16px 35px;
+    background: #d94f72;
+    color: white;
+    border-radius: 50px;
+    font-size: 20px;
+    box-shadow: 0 10px 25px rgba(217, 79, 114, 0.3);
+}
+
+.signature {
+    margin-top: 45px;
+    font-size: 22px;
+    color: #c83e62;
+    font-weight: bold;
+    line-height: 1.7;
+}
+    </style>
+</head>
+
+<body>
+
+    <!-- Floating hearts -->
+    <div class="floating-heart" style="left: 10%; animation-delay: 0s;">❤️</div>
+    <div class="floating-heart" style="left: 30%; animation-delay: 2s;">💕</div>
+    <div class="floating-heart" style="left: 50%; animation-delay: 4s;">💗</div>
+    <div class="floating-heart" style="left: 70%; animation-delay: 1s;">💖</div>
+    <div class="floating-heart" style="left: 90%; animation-delay: 3s;">💕</div>
+
+    <div class="container">
+
+        <div class="heart">❤️</div>
+
+        <h1>Hey Shaina...</h1>
+
+        <p class="subtitle">
+            I made a little something for you.
+            <br>
+            Maybe it's easier to show you than to say it.
+        </p>
+
+        <button class="button" onclick="document.getElementById('apology').scrollIntoView({ behavior: 'smooth' })">
+            Open it 💌
+        </button>
+
+    </div>
+
+<section id="apology" style="
+    min-height: 100vh;
+    padding: 80px 25px;
+    background: #fff8fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+">
+
+    <div style="max-width: 650px;">
+
+        <div style="font-size: 55px;">🥺❤️</div>
+
+        <h2 style="
+            font-size: 45px;
+            color: #c83e62;
+            margin: 20px 0;
+        ">
+            I'm Really Sorry, Shaina
+        </h2>
+
+        <p style="
+            font-size: 19px;
+            line-height: 1.9;
+            color: #6d3a49;
+        ">
+            Shaina, I'm really sorry. ❤️
+        </p>
+
+        <p style="
+            font-size: 19px;
+            line-height: 1.9;
+            color: #6d3a49;
+            margin-top: 20px;
+        ">
+            I know that lately my insecurities made things difficult
+            for you, and I realize that because of them you felt
+            suffocated. Honestly, that was never what I wanted.
+        </p>
+
+        <p style="
+            font-size: 19px;
+            line-height: 1.9;
+            color: #6d3a49;
+            margin-top: 20px;
+        ">
+            I was insecure about certain things, and instead of
+            handling those feelings properly, I let them affect you
+            and our relationship. I know that doesn't make it okay,
+            and I'm not trying to make excuses for it.
+        </p>
+
+        <p style="
+            font-size: 19px;
+            line-height: 1.9;
+            color: #6d3a49;
+            margin-top: 20px;
+        ">
+            You deserve to feel comfortable, free, trusted and happy
+            with me. I never want you to feel like you have to
+            constantly explain yourself or that being with me is
+            becoming a burden.
+        </p>
+
+        <p style="
+            font-size: 19px;
+            line-height: 1.9;
+            color: #6d3a49;
+            margin-top: 20px;
+        ">
+            I'm trying to understand my mistakes and work on myself,
+            because I don't want my insecurities to hurt the person
+            I love.
+        </p>
+
+        <p style="
+            font-size: 19px;
+            line-height: 1.9;
+            color: #6d3a49;
+            margin-top: 20px;
+        ">
+            I'm really sorry for making you feel suffocated when all
+            I ever wanted was to love you and be close to you. ❤️
+        </p>
+
+        <div style="
+            margin-top: 35px;
+            font-size: 24px;
+            color: #c83e62;
+            font-weight: bold;
+        ">
+            I love you, Shaina. ❤️<br>
+            I'm genuinely sorry. 🥺
+        </div>
+
+    </div>
+
+</section>
+<!-- Memories Section -->
+<section class="memories">
+    <h2>Our Little Memories ❤️</h2>
+
+    <p class="memory-text">
+        Some moments are too special to be forgotten. 🥺❤️
+    </p>
+
+    <div class="photo-grid">
+
+        <div class="photo-card">
+            <img src="{{ url_for('static', filename='photo1.jpeg') }}">
+        </div>
+
+        <div class="photo-card">
+            <img src="{{ url_for('static', filename='photo2.jpeg') }}">
+        </div>
+
+        <div class="photo-card">
+            <img src="{{ url_for('static', filename='photo3.jpeg') }}">
+        </div>
+
+        <div class="photo-card">
+            <img src="{{ url_for('static', filename='photo4.jpeg') }}">
+        </div>
+
+        <div class="photo-card">
+            <img src="{{ url_for('static', filename='photo5.jpeg') }}">
+        </div>
+
+        <div class="photo-card">
+            <img src="{{ url_for('static', filename='photo6.jpeg') }}">
+        </div>
+
+    </div>
+
+    <p class="memory-end">
+        Every picture has a little piece of us. ❤️
+    </p>
+</section>
+<!-- Final Slide -->
+<section class="final-slide">
+
+    <div class="final-heart">❤️</div>
+
+    <h2>I Don't Want To Control Your World...</h2>
+
+    <p>
+        I just want to be a beautiful part of it. ❤️
+    </p>
+
+    <p class="final-message">
+        I know I have things to work on, and I promise I'm trying.
+        I don't want my insecurities to come between us.
+        I just want us to be happy, comfortable and ourselves. 🥺
+    </p>
+<div class="forgive">
+    <p>Will you forgive me? 🥺❤️</p>
+
+    <div class="choice-buttons">
+
+    <button class="yes-btn" onclick="forgiveYes()">
+        YES ❤️
+    </button>
+
+    <button class="no-btn" onclick="handleNo()">
+        NO 😭
+    </button>
+
+</div>
+
+<div id="yes-message"></div>
+
+<div id="date-plan" style="display:none; margin-top:30px;">
+
+    <h3>Then let's plan a date. ❤️</h3>
+
+    <p>Pick a day in October 2026 📅</p>
+
+    <input
+        type="date"
+        id="datePicker"
+        min="2026-10-01"
+        max="2026-10-31"
+    >
+
+    <div id="selected-date"></div>
+
+</div>
+</div>
+
+    <div class="signature">
+        Always yours,<br>
+        Sumit ❤️
+    </div>
+
+</section>
+<script>
+
+let noCount = 0;
+
+function forgiveYes() {
+
+    document.getElementById("yes-message").innerHTML =
+        "YAYYY! 🥺❤️ I knew you would forgive me.";
+
+    document.getElementById("date-plan").style.display = "block";
+}
+
+function handleNo() {
+
+    noCount++;
+
+    const noButton = document.querySelector(".no-btn");
+
+    if (noCount === 1) {
+        noButton.innerHTML = "Think again 🥺";
+    }
+
+    else if (noCount === 2) {
+        noButton.innerHTML = "Think again... please? 🥹";
+    }
+
+    else if (noCount === 3) {
+        noButton.innerHTML = "One more chance? ❤️";
+    }
+
+    else {
+        document.getElementById("yes-message").innerHTML =
+            "Okay... I'll wait until you're ready. ❤️🥺";
+    }
+}
+
+document.getElementById("datePicker").addEventListener("change", function() {
+
+    let date = new Date(this.value + "T00:00:00");
+
+    document.getElementById("selected-date").innerHTML =
+        "Our date: " +
+        date.toLocaleDateString("en-IN", {
+            day: "numeric",
+            month: "long",
+            year: "numeric"
+        }) +
+        " ❤️";
+
+});
+
+</script>
+</body>
+</html>
